@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Map">
+
+    <!-- Map Fragment -->
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Map" />
+
+    <!-- TextViews and Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top|center_horizontal"
+        android:padding="16dp">
+
+        <!-- Name TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:text="Name: "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:background="@color/primary"
+                android:layout_height="wrap_content"
+                android:text="Example Name"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Route TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:text="Route: "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/routeTextView"
+                android:layout_width="wrap_content"
+                android:background="@color/primary"
+                android:layout_height="wrap_content"
+                android:text="Example Route"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- No TextView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:background="@color/primary"
+                android:layout_height="wrap_content"
+                android:text="No: "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/noTextView"
+                android:layout_width="wrap_content"
+                android:background="@color/primary"
+                android:layout_height="wrap_content"
+                android:text="Example No"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!-- Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom|center_horizontal"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/map_info"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <!-- Speed TextView -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="50sp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Speed"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/speedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="111"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Arrow Time TextView -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="50sp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arrival Time"
+                    android:textStyle="bold"
+                    android:textSize="22sp" />
+                <TextView
+                    android:id="@+id/arrowTimeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="2222"
+                    android:textSize="27sp" />
+            </LinearLayout>
+
+            <!-- Distance TextView -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Distance"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/distanceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3333u"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Stop"
+            android:backgroundTint="@drawable/stop_button"
+            android:onClick="onSomeActionClick" />
+    </LinearLayout>
+
+</FrameLayout>

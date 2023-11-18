@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Real-Time Bus Tracking System</string>
+    <string name="title_activity_map">Map</string>
+    <string name="google_maps_key">AIzaSyBTFrZZ_I86iLTo2vkWQwEaje0Yl2U0D-g</string>
+    <string name="add_bus">Register Bus</string>
+    <string name="logout">Logout</string>
+</resources>

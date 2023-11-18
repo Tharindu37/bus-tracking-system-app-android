@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/border"
+    android:paddingLeft="30dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/bus_icon"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/busName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BUS Name"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/busRoute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kurunegala to Colombo"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
